@@ -1,0 +1,232 @@
+body { 
+    font-family: Arial, sans-serif; margin: 0; padding: 0; 
+}
+
+header, footer { 
+    background-color: #e4002b; color: white; padding: 10px; text-align: center; 
+}
+
+nav ul { 
+    list-style: none; padding: 0; display: flex; justify-content: center; 
+}
+
+nav ul li { 
+    margin: 0 10px; 
+}
+
+nav ul li a { 
+    color: #ffffff; text-decoration: none; 
+}
+
+main { 
+    padding: 20px; 
+}
+
+header {
+    background-color: #e4002b;
+    background-image: url('../Imagenes/cocacolalogo.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 150px;
+}
+
+.header-logo {
+    background-color: #e4002b;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.Historia {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.9em;
+  margin: 20px auto;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.producto p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.precio {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #e4002b;
+}
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.noticia {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.noticia img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.noticia h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.noticia p {
+  font-size: 0.95em;
+  color: #333;
+}
+
+.contenido-noticia {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.Titulos {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.9em;
+  margin: 20px auto;
+  max-width: 800px;
+  line-height: 1.9;
+}
+
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #e4002b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c30024;
+}
